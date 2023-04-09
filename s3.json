@@ -5,7 +5,7 @@
             "Type": "AWS::S3::Bucket",
             "DeletionPolicy": "Retain",
             "Properties": {
-                "BucketName": "mytestbucket"
+                "BucketName": "testbucket8760"
             }
         }
     }
