@@ -6,7 +6,7 @@ Parameters:
     Type: String
     MinLength: 3
     MaxLength: 20
-    AllowedPattern: '[A-Za-z]+'
+    AllowedPattern: '[A-Za-z0-9]+'
     
 Resources:
   S3Bucket:
