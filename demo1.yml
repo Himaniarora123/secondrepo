@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  S3BucketName:
+    Description: S3 Bucket Name
+    Type: String
+    MinLength: 3
+    MaxLength: 7
+    AllowedPattern: '[A-Za-z]+'
+    
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Ref S3BucketName
+Outputs:
+  BucketName:
+    Value: !Ref S3Bucket
