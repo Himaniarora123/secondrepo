@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('stack-creation') {
             steps {
-                sh "aws cloudformation create-stack --stack-name myfirststack  --template-body file://demo1.yml --region 'us-east-1' --parameters ParameterKey= S3BucketName, ParameterValue= testbucket80765 "
+                sh "aws cloudformation create-stack --stack-name myfirststack  --template-body file://demo1.yml --region 'us-east-1' --parameters ParameterKey=S3BucketName,ParameterValue=testbucket80765 "
             }
         }
     }
