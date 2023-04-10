@@ -5,7 +5,7 @@ Parameters:
     Description: S3 Bucket Name
     Type: String
     MinLength: 3
-    MaxLength: 7
+    MaxLength: 20
     AllowedPattern: '[A-Za-z]+'
     
 Resources:
